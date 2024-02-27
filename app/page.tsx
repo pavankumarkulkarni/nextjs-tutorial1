@@ -48,6 +48,19 @@ export default function Page() {
             className="block md:hidden"
           />
         </div>
+        <div>
+          <label htmlFor="progress">File download :</label>
+          <progress
+            id="progress"
+            max={100}
+            value={10}
+            className={
+              'w-56 [&::-webkit-progress-bar]:rounded-lg [&::-webkit-progress-bar]:bg-gray-200 [&::-webkit-progress-value]:rounded-lg [&::-webkit-progress-value]:bg-green-400'
+            }
+          >
+            10
+          </progress>
+        </div>
       </div>
     </main>
   );
